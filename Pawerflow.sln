@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pawerflow.AppHost", "Pawerf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pawerflow.ServiceDefaults", "Pawerflow.ServiceDefaults\Pawerflow.ServiceDefaults.csproj", "{C8456AFB-5856-460C-8200-882EE56299EF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{DA14F44A-2762-4C31-944C-B8FE5C4D2C5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestionService", "QuestionService\QuestionService.csproj", "{0328835A-0F0E-487D-AB06-6C3590E6E8E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,12 @@ Global
 		{C8456AFB-5856-460C-8200-882EE56299EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8456AFB-5856-460C-8200-882EE56299EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8456AFB-5856-460C-8200-882EE56299EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0328835A-0F0E-487D-AB06-6C3590E6E8E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0328835A-0F0E-487D-AB06-6C3590E6E8E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0328835A-0F0E-487D-AB06-6C3590E6E8E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0328835A-0F0E-487D-AB06-6C3590E6E8E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0328835A-0F0E-487D-AB06-6C3590E6E8E8} = {DA14F44A-2762-4C31-944C-B8FE5C4D2C5A}
 	EndGlobalSection
 EndGlobal
