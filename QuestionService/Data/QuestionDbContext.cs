@@ -7,11 +7,19 @@ public class QuestionDbContext(DbContextOptions options) : DbContext(options)
 {
     public DbSet<Question>  Questions { get; set; }
     public DbSet<Tag>  Tags { get; set; }
+    public DbSet<Answer> Answers { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        
+
+        modelBuilder.Entity<Question>()
+            .HasMany(q => q.Answers)
+            .WithOne(a => a.Question)
+            .HasForeignKey(a => a.QuestionId)
+            .IsRequired()
+            .OnDelete(DeleteBehavior.Cascade);
+
         modelBuilder.Entity<Tag>()
             .HasData(
                 // 🐶 Core Pet Care
